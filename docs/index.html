@@ -3,10 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="robots" content="noindex">
+
     <title>Personal Health - Elio Di Nino</title>
+    <meta name="author" content="Elio Di Nino">
+    <meta name="description" content="Dedicated to providing a calming space to develop and practice your self-care routine with.">
+
     <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
@@ -25,7 +30,7 @@
             </nav>
         </div>
     </header>
-    <main class="main">
+    <main class="main" id="main">
         <h1 class="page-title">Personal Health</h1>
         <p class="page-description">Welcome to my website dedicated to personal health.
             The goal of the site is to provide a calming space to develop and practice your self-care routine with.
@@ -35,10 +40,18 @@
         <p>I encourage you to use the transitioning background as a guide for your deep breathing.
             I recommend breathing in for 3-5 seconds, holding for 0-2 seconds, and then breathing out for another 7 seconds.
             Pink indicates inhaling and has a shorter interval while blue is longer and is for exhaling.
-        </p>  
+        </p>
     </main>
+    <button href="" id="theme" onclick="myFunction()"><i class="mdi mdi-brightness-6"></i></button>
+
+    <script>
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+    </script>
     <footer class="footer">
-        <nav class="footer-social-links">
+        <nav class="footer-social-links" id="footer-social-links">
             <a href="https://github.com/ElioDiNino" class="social-link" target="_blank"><i class="mdi mdi-github"></i></a>
             <a href="https://linkedin.com/in/eliodinino" class="social-link" target="_blank"><i class="mdi mdi-linkedin"></i></a>
             <a href="https://instagram.com/eliodinino" class="social-link" target="_blank"><i class="mdi mdi-instagram"></i></a>                
