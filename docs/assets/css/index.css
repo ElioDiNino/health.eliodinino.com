@@ -1,0 +1,130 @@
+html, body {
+    /* color:#ffffff; */
+    color:#3e3e3e;
+    width: 100%;
+    height:100%;
+}
+  
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 12s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    40% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.navbar-brand {
+    margin: auto;
+    padding-top: 35px;
+}
+
+.navbar-brand img {
+    height: 60px;
+}
+
+.navbar-text {
+    color: #ffffff;
+    opacity: 1;
+    padding: 0 20px;
+    border-right: 1px solid #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar .navbar-text:last-child {
+    border-right: 0;
+}
+@media (max-width: 767px) {
+    .navbar {
+        padding-bottom: 0;
+    }
+}
+
+.main {
+    /* background: #3e3e3e; */
+    background: #ffffff;
+    padding: 30px;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 1200px;
+    border-radius: 25px;
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .main {
+        width: 80%
+    }
+}
+
+.page-title {
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+@media (max-width: 767px) {
+    .page-title {
+        font-size: 35px;
+    }
+}
+    
+.page-description {
+    margin: 15px auto;
+    text-align: center;
+    max-width: 765px;
+    font-size: 18px;
+}
+@media (max-width: 767px) {
+    .page-description {
+        font-size: 14px;
+    }
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 21px;
+}
+
+.footer {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.footer-social-links .social-link {
+    display: inline-block;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #3e3e3e;
+    margin-right: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-social-links .social-link:last-child {
+    margin-right: 0;
+}
+
+.footer-social-links .social-link:hover {
+    text-decoration: none;
+    background-color: #3e3e3e;
+    color: #ffffff;
+}
+
+.copyright {
+    margin-top: 15px;
+    font-size: 16px;
+}
