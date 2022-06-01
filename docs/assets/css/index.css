@@ -4,6 +4,8 @@ html, body {
     height:100%;
     transition: all 0.3s ease-in-out;
     min-width: 250px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .dark-mode {
@@ -45,25 +47,6 @@ body {
     }
 }
 
-.navbar-text {
-    color: #ffffff;
-    opacity: 1;
-    padding: 0 20px;
-    border-right: 1px solid #ffffff;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.navbar .navbar-text:last-child {
-    border-right: 0;
-}
-@media (max-width: 767px) {
-    .navbar {
-        padding-bottom: 0;
-    }
-}
-
 .main {
     background: #ffffff;
     padding: 30px;
@@ -73,11 +56,6 @@ body {
     border-radius: 25px;
     text-align: center;
     transition: all 0.3s ease-in-out;
-}
-@media (max-width: 767px) {
-    .main {
-        width: 80%
-    }
 }
 
 .dark-mode main {
