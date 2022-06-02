@@ -1,6 +1,4 @@
 body {
-    color:#3e3e3e;
-    transition: all 0.3s ease-in-out;
     min-width: 250px;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -9,10 +7,6 @@ body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-}
-
-.dark-mode {
-    color: #ffffff;
 }
 
 @keyframes gradient {
@@ -47,6 +41,7 @@ body {
 
 #main {
     background: #ffffff;
+    color:#3e3e3e;
     width: 80%;
     padding: 30px;
     margin: 10px auto;
@@ -58,6 +53,7 @@ body {
 
 .dark-mode #main {
     background: #3e3e3e;
+    color: #ffffff;
 }
 
 .page-title {
