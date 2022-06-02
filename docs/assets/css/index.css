@@ -5,28 +5,18 @@ body {
     
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    -webkit-animation: gradient 15s ease infinite;
-    -moz-animation: gradient 15s ease infinite;
+    background-size: 600% 800%;
+    background-position: 0% 50%;
+}
+
+.breathe {
     animation: gradient 15s ease infinite;
 }
-@-webkit-keyframes gradient {
-    0% {background-position: 0% 50%}
-    27% {background-position: 100% 50%}
-    53% {background-position: 100% 50%}
-    100% {background-position: 0% 50%}
-}
-@-moz-keyframes gradient {
-    0% {background-position: 0% 50%}
-    27% {background-position: 100% 50%}
-    53% {background-position: 100% 50%}
-    100% {background-position: 0% 50%}
-}
 @keyframes gradient {
-    0% {background-position: 0% 50%}
-    27% {background-position: 100% 50%}
-    53% {background-position: 100% 50%}
-    100% {background-position: 0% 50%}
+    0% {background-position: 0% 50%;}
+    27% {background-position: 100% 50%;}
+    53% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
 }
 
 .navbar-brand {
@@ -54,8 +44,16 @@ body {
     max-width: 1200px;
     border-radius: 25px;
     text-align: center;
-    transition: all 0.3s ease-in-out;
+    transition: opacity 0.3s linear, margin-top 0.3s step-start, z-index 0.3s step-start, color 0.3s ease-in-out, background 0.3s ease-in-out;
 }
+
+.breathe #main {
+    opacity: 0;
+    margin-top: -430px;
+    z-index: -5;
+    transition-timing-function: linear, step-end, step-end;
+}
+
 
 .dark-mode #main {
     background: #3e3e3e;
@@ -102,6 +100,11 @@ p {
 .footer {
     margin: 20px auto;
     text-align: center;
+    transition: opacity 0.3s linear;
+}
+
+.breathe .footer {
+    opacity: 0;
 }
 
 .footer-social-links .social-link {
@@ -139,6 +142,36 @@ p {
 .copyright {
     margin-top: 15px;
     font-size: 16px;
+    color: #ffffff;
+}
+
+#breathe {
+    position: fixed;
+    right: 20px;
+    bottom: 75px;
+
+    border: none;
+    outline: none;
+    box-shadow: 0 0 4px 1px;
+    display: inline-block;
+    line-height: 39px;
+    width: 40px;
+    height: 40px;
+    padding-bottom: 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #3e3e3e;
+    transition: all 0.3s ease-in-out;
+}
+@media (max-width: 767px) {
+    #breathe {
+        right: 10px;
+        bottom: 65px;
+    }
+}
+
+.dark-mode #breathe {
+    background-color: #3e3e3e;
     color: #ffffff;
 }
 
