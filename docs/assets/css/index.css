@@ -51,16 +51,16 @@ body {
 
 .main {
     background: #ffffff;
+    width: 80%;
     padding: 30px;
     margin: 10px auto;
-    width: 80%;
     max-width: 1200px;
     border-radius: 25px;
     text-align: center;
     transition: all 0.3s ease-in-out;
 }
 
-.dark-mode main {
+.dark-mode .main {
     background: #3e3e3e;
 }
 
@@ -100,9 +100,6 @@ p {
         font-size: 13px;
     }
 }
-
-
-
 
 .footer {
     margin: 20px auto;
@@ -156,9 +153,10 @@ p {
     outline: none;
     box-shadow: 0 0 4px 1px;
     display: inline-block;
-    line-height: 40px;
+    line-height: 39px;
     width: 40px;
     height: 40px;
+    padding-bottom: 20px;
     border-radius: 50%;
     background-color: #ffffff;
     color: #3e3e3e;

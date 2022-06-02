@@ -30,26 +30,28 @@
             </nav>
         </div>
     </header>
-    <main class="main" id="main">
-        <h1 class="page-title">Personal Health</h1>
-        <p class="page-description">Welcome to my website dedicated to personal health.
-            The goal of the site is to provide a calming space to develop and practice your self-care routine with.
-        </p>
-        <br>
-        <h1>Deep Breathing</h1>    
-        <p>I encourage you to use the transitioning background as a guide for your deep breathing.
-            I recommend breathing in for 4 seconds, holding for 4 seconds, and then breathing out for another 7 seconds.
-            Blue transitioning to pink indicates inhaling, stationary pink is for holding, and pink transitioning back to blue is for exhaling.
-        </p>
+    <main>
+        <div class="main" id="main">
+            <h1 class="page-title">Personal Health</h1>
+            <p class="page-description">Welcome to my website dedicated to personal health.
+                The goal of the site is to provide a calming space to develop and practice your self-care routine with.
+            </p>
+            <br>
+            <h1>Deep Breathing</h1>    
+            <p>I encourage you to use the transitioning background as a guide for your deep breathing.
+                I recommend breathing in for 4 seconds, holding for 4 seconds, and then breathing out for another 7 seconds.
+                Blue transitioning to pink indicates inhaling, stationary pink is for holding, and pink transitioning back to blue is for exhaling.
+            </p>
+        </div>
+        <button href="" id="theme" onclick="myFunction()"><i class="mdi mdi-brightness-6"></i></button>
+        <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+        </script>
     </main>
-    <button href="" id="theme" onclick="myFunction()"><i class="mdi mdi-brightness-6"></i></button>
-
-    <script>
-    function myFunction() {
-        var element = document.body;
-        element.classList.toggle("dark-mode");
-    }
-    </script>
+    
     <footer class="footer">
         <nav class="footer-social-links" id="footer-social-links">
             <a href="https://github.com/ElioDiNino" class="social-link" target="_blank"><i class="mdi mdi-github"></i></a>
