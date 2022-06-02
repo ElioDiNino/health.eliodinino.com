@@ -1,27 +1,32 @@
 body {
     min-width: 250px;
-    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-
+    backface-visibility: hidden;
+    
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
+    -webkit-animation: gradient 15s ease infinite;
+    -moz-animation: gradient 15s ease infinite;
     animation: gradient 15s ease infinite;
 }
-
+@-webkit-keyframes gradient {
+    0% {background-position: 0% 50%}
+    27% {background-position: 100% 50%}
+    53% {background-position: 100% 50%}
+    100% {background-position: 0% 50%}
+}
+@-moz-keyframes gradient {
+    0% {background-position: 0% 50%}
+    27% {background-position: 100% 50%}
+    53% {background-position: 100% 50%}
+    100% {background-position: 0% 50%}
+}
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    27% {
-        background-position: 100% 50%;
-    }
-    53% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+    0% {background-position: 0% 50%}
+    27% {background-position: 100% 50%}
+    53% {background-position: 100% 50%}
+    100% {background-position: 0% 50%}
 }
 
 .navbar-brand {
@@ -44,7 +49,8 @@ body {
     color:#3e3e3e;
     width: 80%;
     padding: 30px;
-    margin: 10px auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     max-width: 1200px;
     border-radius: 25px;
     text-align: center;
