@@ -1,7 +1,5 @@
 html, body {
     color:#3e3e3e;
-    width: 100%;
-    height:100%;
     transition: all 0.3s ease-in-out;
     min-width: 250px;
     backface-visibility: hidden;
@@ -49,7 +47,7 @@ body {
     }
 }
 
-.main {
+#main {
     background: #ffffff;
     width: 80%;
     padding: 30px;
@@ -60,7 +58,7 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.dark-mode .main {
+.dark-mode #main {
     background: #3e3e3e;
 }
 
