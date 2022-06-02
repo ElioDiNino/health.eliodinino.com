@@ -10,21 +10,23 @@ html, body {
 
 .dark-mode {
     color: #ffffff;
-    transition: all 0.3s ease-in-out;
 }
   
 body {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
-    animation: gradient 12s ease infinite;
+    animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
     }
-    40% {
+    27% {
+        background-position: 100% 50%;
+    }
+    53% {
         background-position: 100% 50%;
     }
     100% {
@@ -60,7 +62,6 @@ body {
 
 .dark-mode main {
     background: #3e3e3e;
-    transition: all 0.3s ease-in-out;
 }
 
 .page-title {
@@ -80,6 +81,9 @@ body {
     text-align: center;
     max-width: 765px;
     font-size: 18px;
+}
+h1 {
+    padding-bottom: 10px;
 }
 p {
     font-size: 16px;
