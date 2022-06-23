@@ -221,10 +221,6 @@ a:hover {
     border-radius: 25px;
 }
 
-.indented-list {
-    margin-left: 7%;
-}
-
 .row {
     display: flex;
     text-align: center;
@@ -239,10 +235,6 @@ a:hover {
     .sec-img {
         width: 95%;
         height: 95%;
-    }
-
-    .indented-list {
-        margin-left: 0;
     }
 
     .row {
