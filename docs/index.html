@@ -35,7 +35,11 @@
         <div class="container">
             <nav class="navbar">
                 <a class="navbar-brand" href="https://eliodinino.com" target="_blank">
-                    <img src="assets/images/logo.png" alt="Elio Di Nino Logo" width="100%" height="60px">
+                    <picture>
+                        <source srcset="assets/images/logo.avif" type="image/avif">
+                        <img src="assets/images/logo.png" alt="Elio Di Nino Logo" width="100%" height="60px"
+                            loading="lazy" decoding="async">
+                    </picture>
                 </a>
             </nav>
         </div>
@@ -60,10 +64,79 @@
             </section>
             <section>
                 <picture>
-                    <source srcset="assets/images/moraine-lake.avif" type="image/avif">
-                    <source srcset="assets/images/moraine-lake.webp" type="image/webp">
-                    <img class="sec-img" src="assets/images/moraine-lake.jpg" alt="Moraine Lake Picture" width="60%"
-                        height="60%" loading="lazy" decoding="async">
+                    <source type="image/avif"
+                        sizes="(max-width: 767px) calc(0.9 * 0.95 * (100vw - 20px)), calc(0.8 * 0.9 * (100vw - 80px))"
+                        srcset="assets/images/moraine-lake-6768.avif 6768w, 
+                        assets/images/moraine-lake-3384.avif 3384w, 
+                        assets/images/moraine-lake-2256.avif 2256w, 
+                        assets/images/moraine-lake-1692.avif 1692w, 
+                        assets/images/moraine-lake-1354.avif 1354w, 
+                        assets/images/moraine-lake-1128.avif 1128w, 
+                        assets/images/moraine-lake-967.avif 967w, 
+                        assets/images/moraine-lake-846.avif 846w, 
+                        assets/images/moraine-lake-752.avif 752w, 
+                        assets/images/moraine-lake-677.avif 677w, 
+                        assets/images/moraine-lake-616.avif 616w, 
+                        assets/images/moraine-lake-564.avif 564w, 
+                        assets/images/moraine-lake-521.avif 521w, 
+                        assets/images/moraine-lake-484.avif 484w, 
+                        assets/images/moraine-lake-452.avif 452w, 
+                        assets/images/moraine-lake-423.avif 423w, 
+                        assets/images/moraine-lake-399.avif 399w, 
+                        assets/images/moraine-lake-376.avif 376w, 
+                        assets/images/moraine-lake-357.avif 357w, 
+                        assets/images/moraine-lake-339.avif 339w, 
+                        assets/images/moraine-lake-323.avif 323w, 
+                        assets/images/moraine-lake-308.avif 308w">
+                    <source type="image/webp"
+                        sizes="(max-width: 767px) calc(0.9 * 0.95 * (100vw - 20px)), calc(0.8 * 0.9 * (100vw - 80px))"
+                        srcset="assets/images/moraine-lake-6768.webp 6768w, 
+                        assets/images/moraine-lake-3384.webp 3384w, 
+                        assets/images/moraine-lake-2256.webp 2256w, 
+                        assets/images/moraine-lake-1692.webp 1692w, 
+                        assets/images/moraine-lake-1354.webp 1354w, 
+                        assets/images/moraine-lake-1128.webp 1128w, 
+                        assets/images/moraine-lake-967.webp 967w, 
+                        assets/images/moraine-lake-846.webp 846w, 
+                        assets/images/moraine-lake-752.webp 752w, 
+                        assets/images/moraine-lake-677.webp 677w, 
+                        assets/images/moraine-lake-616.webp 616w, 
+                        assets/images/moraine-lake-564.webp 564w, 
+                        assets/images/moraine-lake-521.webp 521w, 
+                        assets/images/moraine-lake-484.webp 484w, 
+                        assets/images/moraine-lake-452.webp 452w, 
+                        assets/images/moraine-lake-423.webp 423w, 
+                        assets/images/moraine-lake-399.webp 399w, 
+                        assets/images/moraine-lake-376.webp 376w, 
+                        assets/images/moraine-lake-357.webp 357w, 
+                        assets/images/moraine-lake-339.webp 339w, 
+                        assets/images/moraine-lake-323.webp 323w, 
+                        assets/images/moraine-lake-308.webp 308w">
+                    <img class="sec-img" src="assets/images/moraine-lake.jpg" alt="Moraine Lake Picture" width="90%"
+                        height="90%" loading="lazy" decoding="async"
+                        sizes="(max-width: 767px) calc(0.9 * 0.95 * (100vw - 20px)), calc(0.8 * 0.9 * (100vw - 80px))"
+                        srcset="assets/images/moraine-lake-6768.jpg 6768w, 
+                        assets/images/moraine-lake-3384.jpg 3384w, 
+                        assets/images/moraine-lake-2256.jpg 2256w, 
+                        assets/images/moraine-lake-1692.jpg 1692w, 
+                        assets/images/moraine-lake-1354.jpg 1354w, 
+                        assets/images/moraine-lake-1128.jpg 1128w, 
+                        assets/images/moraine-lake-967.jpg 967w, 
+                        assets/images/moraine-lake-846.jpg 846w, 
+                        assets/images/moraine-lake-752.jpg 752w, 
+                        assets/images/moraine-lake-677.jpg 677w, 
+                        assets/images/moraine-lake-616.jpg 616w, 
+                        assets/images/moraine-lake-564.jpg 564w, 
+                        assets/images/moraine-lake-521.jpg 521w, 
+                        assets/images/moraine-lake-484.jpg 484w, 
+                        assets/images/moraine-lake-452.jpg 452w, 
+                        assets/images/moraine-lake-423.jpg 423w, 
+                        assets/images/moraine-lake-399.jpg 399w, 
+                        assets/images/moraine-lake-376.jpg 376w, 
+                        assets/images/moraine-lake-357.jpg 357w, 
+                        assets/images/moraine-lake-339.jpg 339w, 
+                        assets/images/moraine-lake-323.jpg 323w, 
+                        assets/images/moraine-lake-308.jpg 308w">
                 </picture>
                 <h1>Deep Breathing</h1>
                 <p>One of the easiest ways to manage stress and relax is to perform deep breathing. It helps you to
@@ -80,10 +153,70 @@
             </section>
             <section>
                 <picture>
-                    <source srcset="assets/images/porpoise-bay.avif" type="image/avif">
-                    <source srcset="assets/images/porpoise-bay.webp" type="image/webp">
-                    <img class="sec-img" src="assets/images/porpoise-bay.jpg" alt="Porpoise Bay Picture" width="60%"
-                        height="60%" loading="lazy" decoding="async">
+                    <source type="image/avif"
+                        sizes="(max-width: 767px) calc(0.9 * 0.95 * (100vw - 20px)), calc(0.8 * 0.9 * (100vw - 80px))"
+                        srcset="assets/images/porpoise-bay-5907.avif 5907w, 
+                        assets/images/porpoise-bay-2954.avif 2954w, 
+                        assets/images/porpoise-bay-1969.avif 1969w, 
+                        assets/images/porpoise-bay-1477.avif 1477w, 
+                        assets/images/porpoise-bay-1182.avif 1182w, 
+                        assets/images/porpoise-bay-985.avif 985w, 
+                        assets/images/porpoise-bay-844.avif 844w, 
+                        assets/images/porpoise-bay-739.avif 739w, 
+                        assets/images/porpoise-bay-657.avif 657w, 
+                        assets/images/porpoise-bay-591.avif 591w, 
+                        assets/images/porpoise-bay-537.avif 537w, 
+                        assets/images/porpoise-bay-493.avif 493w, 
+                        assets/images/porpoise-bay-455.avif 455w, 
+                        assets/images/porpoise-bay-422.avif 422w, 
+                        assets/images/porpoise-bay-394.avif 394w, 
+                        assets/images/porpoise-bay-370.avif 370w, 
+                        assets/images/porpoise-bay-348.avif 348w, 
+                        assets/images/porpoise-bay-329.avif 329w, 
+                        assets/images/porpoise-bay-311.avif 311w">
+                    <source type="image/webp"
+                        sizes="(max-width: 767px) calc(0.9 * 0.95 * (100vw - 20px)), calc(0.8 * 0.9 * (100vw - 80px))"
+                        srcset="assets/images/porpoise-bay-5907.webp 5907w, 
+                        assets/images/porpoise-bay-2954.webp 2954w, 
+                        assets/images/porpoise-bay-1969.webp 1969w, 
+                        assets/images/porpoise-bay-1477.webp 1477w, 
+                        assets/images/porpoise-bay-1182.webp 1182w, 
+                        assets/images/porpoise-bay-985.webp 985w, 
+                        assets/images/porpoise-bay-844.webp 844w, 
+                        assets/images/porpoise-bay-739.webp 739w, 
+                        assets/images/porpoise-bay-657.webp 657w, 
+                        assets/images/porpoise-bay-591.webp 591w, 
+                        assets/images/porpoise-bay-537.webp 537w, 
+                        assets/images/porpoise-bay-493.webp 493w, 
+                        assets/images/porpoise-bay-455.webp 455w, 
+                        assets/images/porpoise-bay-422.webp 422w, 
+                        assets/images/porpoise-bay-394.webp 394w, 
+                        assets/images/porpoise-bay-370.webp 370w, 
+                        assets/images/porpoise-bay-348.webp 348w, 
+                        assets/images/porpoise-bay-329.webp 329w, 
+                        assets/images/porpoise-bay-311.webp 311w">
+                    <img class="sec-img" src="assets/images/assets/images/porpoise-bay.jpg" alt="Porpoise Bay Picture"
+                        width="90%" height="90%" loading="lazy" decoding="async"
+                        sizes="(max-width: 767px) calc(0.9 * 0.95 * (100vw - 20px)), calc(0.8 * 0.9 * (100vw - 80px))"
+                        srcset="assets/images/porpoise-bay-5907.jpg 5907w, 
+                        assets/images/porpoise-bay-2954.jpg 2954w, 
+                        assets/images/porpoise-bay-1969.jpg 1969w, 
+                        assets/images/porpoise-bay-1477.jpg 1477w, 
+                        assets/images/porpoise-bay-1182.jpg 1182w, 
+                        assets/images/porpoise-bay-985.jpg 985w, 
+                        assets/images/porpoise-bay-844.jpg 844w, 
+                        assets/images/porpoise-bay-739.jpg 739w, 
+                        assets/images/porpoise-bay-657.jpg 657w, 
+                        assets/images/porpoise-bay-591.jpg 591w, 
+                        assets/images/porpoise-bay-537.jpg 537w, 
+                        assets/images/porpoise-bay-493.jpg 493w, 
+                        assets/images/porpoise-bay-455.jpg 455w, 
+                        assets/images/porpoise-bay-422.jpg 422w, 
+                        assets/images/porpoise-bay-394.jpg 394w, 
+                        assets/images/porpoise-bay-370.jpg 370w, 
+                        assets/images/porpoise-bay-348.jpg 348w, 
+                        assets/images/porpoise-bay-329.jpg 329w, 
+                        assets/images/porpoise-bay-311.jpg 311w">
                 </picture>
                 <h1>Time Management</h1>
                 <p>This has been one of my strongest skills since high school when I realized the importance of managing
@@ -147,9 +280,88 @@
             </section>
             <section>
                 <picture>
-                    <source srcset="assets/images/pyramid-lake.webp" type="image/webp">
-                    <img class="sec-img" src="assets/images/pyramid-lake.jpg" alt="Pyramid Lake Picture" width="70%"
-                        height="70%" loading="lazy" decoding="async">
+                    <source type="image/avif"
+                        sizes="(max-width: 767px) calc(0.9 * 0.95 * (100vw - 20px)), calc(0.8 * 0.9 * (100vw - 80px))"
+                        srcset="assets/images/pyramid-lake-12045.avif 12045w, 
+                        assets/images/pyramid-lake-6023.avif 6023w, 
+                        assets/images/pyramid-lake-4015.avif 4015w, 
+                        assets/images/pyramid-lake-3012.avif 3012w, 
+                        assets/images/pyramid-lake-2409.avif 2409w, 
+                        assets/images/pyramid-lake-2008.avif 2008w, 
+                        assets/images/pyramid-lake-1721.avif 1721w, 
+                        assets/images/pyramid-lake-1506.avif 1506w, 
+                        assets/images/pyramid-lake-1339.avif 1339w, 
+                        assets/images/pyramid-lake-1205.avif 1205w, 
+                        assets/images/pyramid-lake-1095.avif 1095w, 
+                        assets/images/pyramid-lake-927.avif 927w, 
+                        assets/images/pyramid-lake-803.avif 803w,
+                        assets/images/pyramid-lake-753.avif 753w, 
+                        assets/images/pyramid-lake-670.avif 670w, 
+                        assets/images/pyramid-lake-603.avif 603w, 
+                        assets/images/pyramid-lake-548.avif 548w, 
+                        assets/images/pyramid-lake-502.avif 502w, 
+                        assets/images/pyramid-lake-464.avif 464w, 
+                        assets/images/pyramid-lake-431.avif 431w, 
+                        assets/images/pyramid-lake-402.avif 402w, 
+                        assets/images/pyramid-lake-377.avif 377w, 
+                        assets/images/pyramid-lake-355.avif 355w, 
+                        assets/images/pyramid-lake-335.avif 335w, 
+                        assets/images/pyramid-lake-317.avif 317w">
+                    <source type="image/webp"
+                        sizes="(max-width: 767px) calc(0.9 * 0.95 * (100vw - 20px)), calc(0.8 * 0.9 * (100vw - 80px))"
+                        srcset="assets/images/pyramid-lake-12045.webp 12045w, 
+                        assets/images/pyramid-lake-6023.webp 6023w, 
+                        assets/images/pyramid-lake-4015.webp 4015w, 
+                        assets/images/pyramid-lake-3012.webp 3012w, 
+                        assets/images/pyramid-lake-2409.webp 2409w, 
+                        assets/images/pyramid-lake-2008.webp 2008w, 
+                        assets/images/pyramid-lake-1721.webp 1721w, 
+                        assets/images/pyramid-lake-1506.webp 1506w, 
+                        assets/images/pyramid-lake-1339.webp 1339w, 
+                        assets/images/pyramid-lake-1205.webp 1205w, 
+                        assets/images/pyramid-lake-1095.webp 1095w, 
+                        assets/images/pyramid-lake-927.webp 927w, 
+                        assets/images/pyramid-lake-803.webp 803w,
+                        assets/images/pyramid-lake-753.webp 753w, 
+                        assets/images/pyramid-lake-670.webp 670w, 
+                        assets/images/pyramid-lake-603.webp 603w, 
+                        assets/images/pyramid-lake-548.webp 548w, 
+                        assets/images/pyramid-lake-502.webp 502w, 
+                        assets/images/pyramid-lake-464.webp 464w, 
+                        assets/images/pyramid-lake-431.webp 431w, 
+                        assets/images/pyramid-lake-402.webp 402w, 
+                        assets/images/pyramid-lake-377.webp 377w, 
+                        assets/images/pyramid-lake-355.webp 355w, 
+                        assets/images/pyramid-lake-335.webp 335w, 
+                        assets/images/pyramid-lake-317.webp 317w">
+                    <img class="sec-img" src="assets/images/pyramid-lake.jpg" alt="Pyramid Lake Picture" width="90%"
+                        height="90%" loading="lazy" decoding="async"
+                        sizes="(max-width: 767px) calc(0.9 * 0.95 * (100vw - 20px)), calc(0.8 * 0.9 * (100vw - 80px))"
+                        srcset="assets/images/pyramid-lake-12045.jpg 12045w, 
+                        assets/images/pyramid-lake-6023.jpg 6023w, 
+                        assets/images/pyramid-lake-4015.jpg 4015w, 
+                        assets/images/pyramid-lake-3012.jpg 3012w, 
+                        assets/images/pyramid-lake-2409.jpg 2409w, 
+                        assets/images/pyramid-lake-2008.jpg 2008w, 
+                        assets/images/pyramid-lake-1721.jpg 1721w, 
+                        assets/images/pyramid-lake-1506.jpg 1506w, 
+                        assets/images/pyramid-lake-1339.jpg 1339w, 
+                        assets/images/pyramid-lake-1205.jpg 1205w, 
+                        assets/images/pyramid-lake-1095.jpg 1095w, 
+                        assets/images/pyramid-lake-927.jpg 927w, 
+                        assets/images/pyramid-lake-803.jpg 803w,
+                        assets/images/pyramid-lake-753.jpg 753w, 
+                        assets/images/pyramid-lake-670.jpg 670w, 
+                        assets/images/pyramid-lake-603.jpg 603w, 
+                        assets/images/pyramid-lake-548.jpg 548w, 
+                        assets/images/pyramid-lake-502.jpg 502w, 
+                        assets/images/pyramid-lake-464.jpg 464w, 
+                        assets/images/pyramid-lake-431.jpg 431w, 
+                        assets/images/pyramid-lake-402.jpg 402w, 
+                        assets/images/pyramid-lake-377.jpg 377w, 
+                        assets/images/pyramid-lake-355.jpg 355w, 
+                        assets/images/pyramid-lake-335.jpg 335w, 
+                        assets/images/pyramid-lake-317.jpg 317w">
                 </picture>
                 <h1>Sleep</h1>
                 <p>Getting good sleep is important for staying energized and engaged in everyday life. It is easy to
@@ -157,7 +369,7 @@
                     extremely detrimental to your health. I've added a great podcast episode here from The Happiness Lab
                     that discusses what can result from an extreme lack of sleep as well as strategies to improve your
                     sleeping habits.</p>
-                <iframe id="podcast" frameBorder="0" height="200" scrolling="no"
+                <iframe id="podcast" frameBorder="0" height="200" scrolling="no" loading="lazy"
                     style="margin: 30px auto; display: block" width="80%"
                     src="https://playlist.megaphone.fm/?e=CAD4340849426&light=true"></iframe>
                 <p>Here are some of the tips I have found helpful to getting a better sleep inspired by the
@@ -201,10 +413,70 @@
             </section>
             <section>
                 <picture>
-                    <source srcset="assets/images/chesterman-beach.avif" type="image/avif">
-                    <source srcset="assets/images/chesterman-beach.webp" type="image/webp">
+                    <source type="image/avif"
+                        sizes="(max-width: 767px) calc(0.9 * 0.95 * (100vw - 20px)), calc(0.8 * 0.9 * (100vw - 80px))"
+                        srcset="assets/images/chesterman-beach-5940.avif 5940w, 
+                        assets/images/chesterman-beach-2970.avif 2970w, 
+                        assets/images/chesterman-beach-1980.avif 1980w, 
+                        assets/images/chesterman-beach-1485.avif 1485w, 
+                        assets/images/chesterman-beach-1188.avif 1188w, 
+                        assets/images/chesterman-beach-990.avif 990w, 
+                        assets/images/chesterman-beach-849.avif 849w, 
+                        assets/images/chesterman-beach-743.avif 743w, 
+                        assets/images/chesterman-beach-660.avif 660w, 
+                        assets/images/chesterman-beach-594.avif 594w, 
+                        assets/images/chesterman-beach-540.avif 540w, 
+                        assets/images/chesterman-beach-495.avif 495w, 
+                        assets/images/chesterman-beach-457.avif 457w, 
+                        assets/images/chesterman-beach-425.avif 425w, 
+                        assets/images/chesterman-beach-396.avif 396w, 
+                        assets/images/chesterman-beach-372.avif 372w, 
+                        assets/images/chesterman-beach-350.avif 350w, 
+                        assets/images/chesterman-beach-330.avif 330w, 
+                        assets/images/chesterman-beach-313.avif 313w">
+                    <source type="image/webp"
+                        sizes="(max-width: 767px) calc(0.9 * 0.95 * (100vw - 20px)), calc(0.8 * 0.9 * (100vw - 80px))"
+                        srcset="assets/images/chesterman-beach-5940.webp 5940w, 
+                        assets/images/chesterman-beach-2970.webp 2970w, 
+                        assets/images/chesterman-beach-1980.webp 1980w, 
+                        assets/images/chesterman-beach-1485.webp 1485w, 
+                        assets/images/chesterman-beach-1188.webp 1188w, 
+                        assets/images/chesterman-beach-990.webp 990w, 
+                        assets/images/chesterman-beach-849.webp 849w, 
+                        assets/images/chesterman-beach-743.webp 743w, 
+                        assets/images/chesterman-beach-660.webp 660w, 
+                        assets/images/chesterman-beach-594.webp 594w, 
+                        assets/images/chesterman-beach-540.webp 540w, 
+                        assets/images/chesterman-beach-495.webp 495w, 
+                        assets/images/chesterman-beach-457.webp 457w, 
+                        assets/images/chesterman-beach-425.webp 425w, 
+                        assets/images/chesterman-beach-396.webp 396w, 
+                        assets/images/chesterman-beach-372.webp 372w, 
+                        assets/images/chesterman-beach-350.webp 350w, 
+                        assets/images/chesterman-beach-330.webp 330w, 
+                        assets/images/chesterman-beach-313.webp 313w">
                     <img class="sec-img" src="assets/images/chesterman-beach.jpg" alt="Chesterman Beach Picture"
-                        width="60%" height="60%" loading="lazy" decoding="async">
+                        width="90%" height="90%" loading="lazy" decoding="async"
+                        sizes="(max-width: 767px) calc(0.9 * 0.95 * (100vw - 20px)), calc(0.8 * 0.9 * (100vw - 80px))"
+                        srcset="assets/images/chesterman-beach-5940.jpg 5940w, 
+                        assets/images/chesterman-beach-2970.jpg 2970w, 
+                        assets/images/chesterman-beach-1980.jpg 1980w, 
+                        assets/images/chesterman-beach-1485.jpg 1485w, 
+                        assets/images/chesterman-beach-1188.jpg 1188w, 
+                        assets/images/chesterman-beach-990.jpg 990w, 
+                        assets/images/chesterman-beach-849.jpg 849w, 
+                        assets/images/chesterman-beach-743.jpg 743w, 
+                        assets/images/chesterman-beach-660.jpg 660w, 
+                        assets/images/chesterman-beach-594.jpg 594w, 
+                        assets/images/chesterman-beach-540.jpg 540w, 
+                        assets/images/chesterman-beach-495.jpg 495w, 
+                        assets/images/chesterman-beach-457.jpg 457w, 
+                        assets/images/chesterman-beach-425.jpg 425w, 
+                        assets/images/chesterman-beach-396.jpg 396w, 
+                        assets/images/chesterman-beach-372.jpg 372w, 
+                        assets/images/chesterman-beach-350.jpg 350w, 
+                        assets/images/chesterman-beach-330.jpg 330w, 
+                        assets/images/chesterman-beach-313.jpg 313w">
                 </picture>
                 <h1>Exercise</h1>
                 <p>Exercising is not everyone's favourite activity but it is important in order to stay healthy mentally
@@ -243,10 +515,70 @@
             </section>
             <section>
                 <picture>
-                    <source srcset="assets/images/kits-beach.avif" type="image/avif">
-                    <source srcset="assets/images/kits-beach.webp" type="image/webp">
-                    <img class="sec-img" src="assets/images/kits-beach.jpg" alt="Kits Beach Picture" width="60%"
-                        height="60%" loading="lazy" decoding="async">
+                    <source type="image/avif"
+                        sizes="(max-width: 767px) calc(0.9 * 0.95 * (100vw - 20px)), calc(0.8 * 0.9 * (100vw - 80px))"
+                        srcset="assets/images/kits-beach-5964.avif 5964w, 
+                        assets/images/kits-beach-2982.avif 2982w, 
+                        assets/images/kits-beach-1988.avif 1988w, 
+                        assets/images/kits-beach-1491.avif 1491w, 
+                        assets/images/kits-beach-1193.avif 1193w, 
+                        assets/images/kits-beach-994.avif 994w, 
+                        assets/images/kits-beach-852.avif 852w, 
+                        assets/images/kits-beach-746.avif 746w, 
+                        assets/images/kits-beach-663.avif 663w, 
+                        assets/images/kits-beach-597.avif 597w, 
+                        assets/images/kits-beach-543.avif 543w, 
+                        assets/images/kits-beach-497.avif 497w, 
+                        assets/images/kits-beach-459.avif 459w, 
+                        assets/images/kits-beach-426.avif 426w, 
+                        assets/images/kits-beach-398.avif 398w, 
+                        assets/images/kits-beach-373.avif 373w, 
+                        assets/images/kits-beach-351.avif 351w, 
+                        assets/images/kits-beach-332.avif 332w, 
+                        assets/images/kits-beach-314.avif 314w">
+                    <source type="image/webp"
+                        sizes="(max-width: 767px) calc(0.9 * 0.95 * (100vw - 20px)), calc(0.8 * 0.9 * (100vw - 80px))"
+                        srcset="assets/images/kits-beach-5964.webp 5964w, 
+                        assets/images/kits-beach-2982.webp 2982w, 
+                        assets/images/kits-beach-1988.webp 1988w, 
+                        assets/images/kits-beach-1491.webp 1491w, 
+                        assets/images/kits-beach-1193.webp 1193w, 
+                        assets/images/kits-beach-994.webp 994w, 
+                        assets/images/kits-beach-852.webp 852w, 
+                        assets/images/kits-beach-746.webp 746w, 
+                        assets/images/kits-beach-663.webp 663w, 
+                        assets/images/kits-beach-597.webp 597w, 
+                        assets/images/kits-beach-543.webp 543w, 
+                        assets/images/kits-beach-497.webp 497w, 
+                        assets/images/kits-beach-459.webp 459w, 
+                        assets/images/kits-beach-426.webp 426w, 
+                        assets/images/kits-beach-398.webp 398w, 
+                        assets/images/kits-beach-373.webp 373w, 
+                        assets/images/kits-beach-351.webp 351w, 
+                        assets/images/kits-beach-332.webp 332w, 
+                        assets/images/kits-beach-314.webp 314w">
+                    <img class="sec-img" src="assets/images/kits-beach.jpg" alt="Kits Beach Picture" width="90%"
+                        height="90%" loading="lazy" decoding="async"
+                        sizes="(max-width: 767px) calc(0.9 * 0.95 * (100vw - 20px)), calc(0.8 * 0.9 * (100vw - 80px))"
+                        srcset="assets/images/kits-beach-5964.jpg 5964w, 
+                        assets/images/kits-beach-2982.jpg 2982w, 
+                        assets/images/kits-beach-1988.jpg 1988w, 
+                        assets/images/kits-beach-1491.jpg 1491w, 
+                        assets/images/kits-beach-1193.jpg 1193w, 
+                        assets/images/kits-beach-994.jpg 994w, 
+                        assets/images/kits-beach-852.jpg 852w, 
+                        assets/images/kits-beach-746.jpg 746w, 
+                        assets/images/kits-beach-663.jpg 663w, 
+                        assets/images/kits-beach-597.jpg 597w, 
+                        assets/images/kits-beach-543.jpg 543w, 
+                        assets/images/kits-beach-497.jpg 497w, 
+                        assets/images/kits-beach-459.jpg 459w, 
+                        assets/images/kits-beach-426.jpg 426w, 
+                        assets/images/kits-beach-398.jpg 398w, 
+                        assets/images/kits-beach-373.jpg 373w, 
+                        assets/images/kits-beach-351.jpg 351w, 
+                        assets/images/kits-beach-332.jpg 332w, 
+                        assets/images/kits-beach-314.jpg 314w">
                 </picture>
                 <h1>Other Resources</h1>
                 <p>Below you can find a categorized list of the resources I found most helpful from <a
