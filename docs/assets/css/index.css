@@ -82,6 +82,7 @@ body {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     overflow-y: scroll;
+    font-size: 100%;
 
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -168,14 +169,14 @@ Main Content
 
 .page-title {
     text-align: center;
-    font-size: 70px;
+    font-size: 4.375em;
     font-weight: bold;
     margin-bottom: 6px;
 }
 
 @media (max-width: 767px) {
     .page-title {
-        font-size: 35px;
+        font-size: 2.1875em;
     }
 }
 
@@ -188,24 +189,15 @@ Main Content
 
 @media (max-width: 767px) {
     .page-description {
-        font-size: 0.875em;
+        font-size: 1em;
     }
 
     h1 {
-        font-size: 25px;
+        font-size: 1.5625em;
     }
 
     h4 {
-        font-size: 20px;
-    }
-
-    #main p {
-        font-size: 0.85em;
-    }
-
-    #main li {
-        font-size: 0.85em;
-        margin-left: 0%;
+        font-size: 1.25em;
     }
 }
 
@@ -296,7 +288,7 @@ a:hover {
 
 .copyright {
     margin-top: 15px;
-    font-size: 16px;
+    font-size: 1em;
     color: #ffffff;
 }
 
