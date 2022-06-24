@@ -75,8 +75,8 @@ body {
     backface-visibility: hidden;
     overflow-y: scroll;
     font-size: 100%;
-
     font-family: 'Roboto', sans-serif;
+
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 600% 800%;
     background-position: 0% 50%;
